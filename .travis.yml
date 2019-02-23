@@ -1,0 +1,13 @@
+addons:
+  apt:
+    packages:
+      - git
+      - make
+      - curl
+
+install:
+  - make init
+
+script:
+  - make terraform/kitchen/test
+
