@@ -3,19 +3,20 @@ variable "vpc-cidr" {}
 variable "availability-zones" {
     type = "list"
 }
-
-variable "elb_private_subnet_suffix" {}
-variable "elb_private_subnets" {
+variable "private_subnets" {
     type = "list"
 }
-
-variable "app_private_subnet_suffix" {}
-variable "app_private_subnets" {
+variable "public_subnets" {
     type = "list"
 }
+variable "enable_nat_gateway" {
+  
+}
+variable "enable_vpn_gateway" {
+  
+}
 
-
-variable "db_private_subnet_suffix" {}
-variable "db_private_subnets" {
-    type = "list"
+variable "tags" {
+    type = "map"
+  
 }

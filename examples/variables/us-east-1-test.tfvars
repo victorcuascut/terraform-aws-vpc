@@ -1,12 +1,11 @@
-vpc-name                    =   "example-vpc"
-vpc-cidr                    =   "10.6.32.0/20"
-availability-zones      =   ["us-east-1a", "us-east-1b", "us-east-1c"]
-
-elb_private_subnet_suffix   =   "elb-private"
-elb_private_subnets         =   ["10.6.32.0/24", "10.6.33.0/24", "10.6.34.0/24"]
-
-app_private_subnet_suffix   =   "app-private"
-app_private_subnets         =   ["10.6.35.0/24", "10.6.36.0/24", "10.6.37.0/24"]
-
-db_private_subnet_suffix   =   "db-private"
-db_private_subnets         =   ["10.6.38.0/24", "10.6.39.0/24", "10.6.40.0/24"]
+vpc-name                = "test-vpc"
+vpc-cidr                = "10.0.0.0/16"
+availability-zones      = ["us-east-1a", "us-east-1b", "us-east-1c"]
+private_subnets         = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+public_subnets          = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+enable_nat_gateway      = true
+enable_vpn_gateway      = true
+tags = {
+    Terraform = "true"
+    Environment = "test"
+  }
