@@ -1,12 +1,13 @@
 ---
 driver:
   name: terraform
+  root_module_directory: examples
   variable_files:
     - examples/variables/us-east-1-test.tfvars
 
 provisioner:
   name: terraform
-  directory: examples
+  root_module_directory: examples
   variable_files:
     - examples/variables/us-east-1-test.tfvars
 

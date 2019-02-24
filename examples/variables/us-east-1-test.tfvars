@@ -1,3 +1,6 @@
+user_account_id         = "399188165922"
+aws_region              = "us-east-1"
+
 vpc-name                = "test-vpc"
 vpc-cidr                = "10.0.0.0/16"
 availability-zones      = ["us-east-1a", "us-east-1b", "us-east-1c"]

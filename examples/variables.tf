@@ -1,3 +1,5 @@
+variable "user_account_id" {}
+variable "aws_region" {}
 variable "vpc-name" {}
 variable "vpc-cidr" {}
 variable "availability-zones" {
